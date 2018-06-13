@@ -1,4 +1,7 @@
 defmodule Rumbl.Mixfile do
+  @moduledoc """
+  Mix file
+  """
   use Mix.Project
 
   def project do
@@ -42,7 +45,9 @@ defmodule Rumbl.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:comeonin, "~> 4.1"},
-      {:bcrypt_elixir, "~> 1.0"}
+      {:bcrypt_elixir, "~> 1.0"},
+      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false},
+      {:plug, "1.5.0"}
     ]
   end
 

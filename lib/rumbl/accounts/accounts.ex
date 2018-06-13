@@ -36,7 +36,9 @@ defmodule Rumbl.Accounts do
   end
 
   def get_user_by_email(email) do
-    from(u in User, join: c in assoc(u, :credential), where: c.email == ^email)
+    query = from(u in User, join: c in assoc(u, :credential), where: c.email == ^email)
+
+    query
     |> Repo.one()
     |> Repo.preload(:credential)
   end

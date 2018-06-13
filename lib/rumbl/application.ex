@@ -1,4 +1,7 @@
 defmodule Rumbl.Application do
+  @moduledoc """
+    Application
+  """
   use Application
 
   # See https://hexdocs.pm/elixir/Application.html

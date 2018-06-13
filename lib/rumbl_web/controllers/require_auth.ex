@@ -1,4 +1,7 @@
 defmodule RumblWeb.RequireAuth do
+  @moduledoc """
+    Plug to require the user is logged in
+  """
   import Plug.Conn
   import Phoenix.Controller
   alias RumblWeb.Router.Helpers, as: Routes

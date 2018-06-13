@@ -1,4 +1,8 @@
 defmodule RumblWeb.Auth do
+  @moduledoc """
+    Plug for loading current user
+  """
+
   import Plug.Conn
   alias Rumbl.Accounts
 
